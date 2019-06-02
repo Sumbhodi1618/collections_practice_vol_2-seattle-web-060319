@@ -23,4 +23,12 @@ def count_elements(array)
     end
   counts.keys
 end
-    
+   
+def merge_data(keys, data)
+  binding.pry
+  keys.each do |name_hash|
+    data.each do |hash|
+      name_hash.merge!(hash[name_hash[:first_name]])
+    end
+  end
+end 
